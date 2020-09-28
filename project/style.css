@@ -1,0 +1,36 @@
+/* Home Style */
+
+#centerTextOnImage {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#imageSlider {
+    width: 50%; 
+    margin-top: 5%;
+}
+
+#introductionText {
+    margin: 5% 25% 0% 25%;
+}
+
+#map {
+    border:0; 
+    display:block;
+    margin-top: 5%;
+}
+
+#address {
+    margin: 0.1% 25% 0% 25%;
+}
+
+#contacts {
+    margin: 5% 0% 5% 0%; 
+    text-align: center;
+}
+
+#contacts a {
+    margin-right: 1%;
+}
