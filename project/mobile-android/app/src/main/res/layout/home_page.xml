@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:map="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/light_blue">
+
+  <ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:contentDescription="@string/content_description"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    app:srcCompat="@drawable/home" />
+
+  <TextView
+    android:id="@+id/textView4"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="60dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="60dp"
+    android:text="@string/about"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imageView2"
+    app:layout_constraintVertical_bias="0.0" />
+
+  <fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="313dp"
+    android:layout_height="154dp"
+    android:layout_marginTop="32dp"
+    android:elevation="5dp"
+    app:layout_constraintVertical_bias="0.0"
+    map:layout_constraintBottom_toBottomOf="parent"
+    map:layout_constraintEnd_toEndOf="parent"
+    map:layout_constraintStart_toStartOf="parent"
+    map:layout_constraintTop_toBottomOf="@+id/textView4"
+    tools:context=".HomeActivity" />
+
+  <!-- Bottom bar -->
+
+  <TextView
+    android:id="@+id/textView5"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="65dp"
+    android:layout_marginEnd="65dp"
+    android:text="@string/address"
+    android:textColor="@color/white"
+    android:textSize="13sp"
+    app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/map"
+    app:layout_constraintVertical_bias="0.0" />
+
+  <ImageView
+    android:id="@+id/button_whatsapp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/content_description"
+    app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/button_facebook"
+    app:layout_constraintTop_toBottomOf="@+id/textView5"
+    map:srcCompat="@drawable/button_whatsapp" />
+
+  <ImageView
+    android:id="@+id/button_facebook"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/content_description"
+    app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView5"
+    map:srcCompat="@drawable/button_facebook" />
+
+  <ImageView
+    android:id="@+id/button_instagram"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/content_description"
+    app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+    app:layout_constraintEnd_toStartOf="@+id/button_facebook"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView5"
+    map:srcCompat="@drawable/button_instagram" />
+
+  <LinearLayout
+    android:id="@+id/linearLayout2"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/map"
+    app:layout_constraintVertical_bias="1.0">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/bottom_navigation"
+      style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/bottom_bar"
+      app:labelVisibilityMode="selected"
+      app:menu="@menu/bottom_navigation_menu" />
+
+  </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

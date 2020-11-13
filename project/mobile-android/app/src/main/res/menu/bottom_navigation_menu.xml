@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/home_page"
+    android:enabled="true"
+    android:icon="@drawable/button_navigation_home"
+    android:title="@string/home_navigation_label" />
+  <item
+    android:id="@+id/catalog_page"
+    android:enabled="true"
+    android:icon="@drawable/button_navigation_catalog"
+    android:title="@string/catalog_navigation_label"/>
+</menu>

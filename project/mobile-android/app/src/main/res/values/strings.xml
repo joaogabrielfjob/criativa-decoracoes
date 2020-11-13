@@ -1,0 +1,12 @@
+<resources>
+  <string name="app_name">Criativa Decorações</string>
+  <string name="welcome">Seja bem-vindo!</string>
+  <string name="about">Donec nec auctor erat. Aliquam erat  volutpat. Proin sit amet exviverra ne que vulputate blandit. Cras et ultricies lorem.</string>
+  <string name="address">Rua: Luiz Fernando Verissimo, Número: 94, Bairro: Santa fé - Gravataí/RS</string>
+
+  <string name="theme_name">TEMA X</string>
+
+  <string name="content_description">Content Description</string>
+  <string name="home_navigation_label">Home</string>
+  <string name="catalog_navigation_label">Catalógo</string>
+</resources>
